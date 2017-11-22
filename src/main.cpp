@@ -1,9 +1,6 @@
 //============================================================================
 // Name        : topsis.cpp
 // Author      : Athanasios Fotos
-// Version     :
-// Copyright   : Copy Everything
-// Description : Hello World in C++, Ansi-style
 //============================================================================
 
 #include <iostream>
