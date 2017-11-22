@@ -17,7 +17,7 @@ MyFileReader::~MyFileReader() {
 double **MyFileReader::read() {
 
     double **values;
-    double tempArray[12][12];
+    double tempArray[128][128];
 
     string line;
     ifstream myfile(fileName.c_str());
