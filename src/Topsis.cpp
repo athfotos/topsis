@@ -9,7 +9,6 @@
 #include <fstream>
 #include <math.h>
 #include <iomanip>
-#include <algorithm>
 
 #include "MyFileReader.h"
 #include "Topsis.h"
@@ -18,8 +17,9 @@
 
 using namespace std;
 
-const string Topsis::input_fileName = "myfile.dat";
-const string Topsis::weights_fileName = "weights.dat";
+const string Topsis::input_fileName = "../resources/myfile.dat";
+const string Topsis::weights_fileName = "../resources/weights.dat";
+const string Topsis::evaluation_fileName = "../resources/evaluation.dat";
 
 Topsis::Topsis() {
 
@@ -194,7 +194,7 @@ void Topsis::doCrazyMath() {
         cout << s_w[i] << endl;
     }
 
-    ofstream evaluation("evaluation.dat");
+    ofstream evaluation(evaluation_fileName.c_str());
     for (i = 0; i < x_lines; i++) {
         evaluation << fixed << setprecision(5) << s_w[i] << endl;
     }
